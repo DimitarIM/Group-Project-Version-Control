@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <ul class="menu">
+            <li><a href="#">
+                    <h2>Project</h2>
+                </a></li>
+            <li><a href="#">
+                    <h2>Adding Changes</h2>
+                </a></li>
+            <li><a href="#">
+                    <h2>Branching</h2>
+                </a></li>
+            <li><a href="#">
+                    <h2>About us</h2>
+                </a></li>
+        </ul>
+        <div class="menu-toggle"></div>
+    </header>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle')
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+        })
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+        }, { once: true })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 80px;
+    padding-right: 90px;
+    height: 100px;
+    background-color: transparent;
+}
+
+.menu-toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url(../images/header/icons/menu-header.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+    transition: background-size 0.15s;
+    cursor: pointer;
+}
+
+.menu-toggle:hover {
+    background-size: 55px;
+}
+
+.menu-toggle.active {
+    background: url(../images/header/icons/cross.png);
+    background-repeat: no-repeat;
+    background-size:35px;
+    background-position: center;
+    transition: background-size 0.15s;
+    cursor: pointer;
+}
+
+.menu-toggle.active:hover{
+    background-size: 40px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    margin-right: 30px;
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+.menu li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 20px;
+    transform: scale(1);
+    color: white
+}
+
+.menu li a:hover {
+
+}
+
+/* .spark {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    margin: 40px;
+
+    animation-name: glow;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+} */
