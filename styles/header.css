@@ -12,6 +12,26 @@
     background-color: transparent;
 }
 
+.logo {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: url(../images/header/icons/smart-lens.png);
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: center;
+    cursor: pointer;
+    left: 100px;
+    animation: float 6s linear infinite;
+    transition: background-size 0.15s;
+}
+
+.logo:hover {
+    transform: translateY(0);
+    animation-play-state: paused;
+    background-size: 85px
+}
+
 .menu-toggle {
     position: relative;
     width: 60px;
@@ -22,6 +42,7 @@
     background-position: center;
     transition: background-size 0.15s;
     cursor: pointer;
+    
 }
 
 .menu-toggle:hover {
@@ -40,14 +61,22 @@
 .menu-toggle.active:hover{
     background-size: 40px;
 }
+
 .menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 1;
     margin-right: 30px;
     font-size: 18px;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 0.5s;
+}
+
+.menu.active {
+    opacity: 1;
+    transform: translateY(0)
 }
 
 .menu li {
@@ -60,11 +89,12 @@
     text-decoration: none;
     margin-right: 20px;
     transform: scale(1);
-    color: white
+    color: white;
+    transition: all 0.3s;
 }
 
 .menu li a:hover {
-
+    transform: scale(1.1);
 }
 
 /* .spark {
@@ -79,3 +109,14 @@
     animation-delay: 0s;
     animation-iteration-count: infinite;
 } */
+
+@keyframes float {
+    0% {
+        transform: translateY(0px)
+    }
+
+    50%
+    {
+        transform: translateY(8px)
+    }
+}

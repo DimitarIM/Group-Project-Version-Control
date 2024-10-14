@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -7,6 +9,8 @@
 }
 
 body {
-    background-color: rgb(23, 27, 35);
-    font-family: Oswald, Arial;
+    background:rgb(26, 34, 48);
+    background: linear-gradient(0deg, rgba(26,34,48,1) 0%, rgba(20,19,16,1) 100%);
+    background-attachment: fixed;
+    font-family:"Inter", Oswald;
 }
