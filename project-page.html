@@ -4,32 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/project-page.css">
 </head>
 <body>
-    Explain why repositories are necessary: 
-    1. Collaboration: They allow multiple developers to work on the same project simultaneously.
-    2. Backup: Hosting your code on a remote server ensures that you have a backup in case something happens to your local machine.
-    3. Traceability: They provide a complete history of changes made to the codebase.
-
-    Detail the steps involved in creating a project on github
-    1. Create a New Repository:
-        Click the + icon in the top right corner of the GitHub homepage.
-        Select New repository from the dropdown menu.
-    2. Repository Details:
-        Name: Enter a name for your repository.
-        Description: Optionally, add a description
-        Visibility: Choose whether your repository will be Public or Private
-    3. Create Repository: Click the Create repository button to finalize the creation of your new repository.
-    4. Clone Repository:
-        If you want to work on your project locally, you have to clone the repository to your computer using Git. Use the command:
-
-    Details the relevant git commands relevant to creating a project locally
-    1. first, create a new directory for your project and navigate into it
-    2. Initialize a Git Repository: Initialize a new Git repository in your project directory: get init. this command sets up the necessary git files and directories in your project
-    3. Add files: Add the files you want to include in your first commit: git add . The . adds all files in the current directory to the staging area.
-    4. Commit Changes: Commit the added files to the repository with a message:
-    5. Push Changes: Push your local commits to the remote repository: This command uploads your changes to the remote repository and sets the upstream branch.
-    6. Pull Changes from the Remote Repository: To fetch and merge changes from the remote repository into your local branch:
+    <div class="container">
+        <div class="image">
+            <img src="images/gitClone1.png" alt="" height="100%" width="100%">
+        </div>
+        <div class="text">
+            <h2>About Repositories</h2>
+            <p>Repositories are necessary to collaborate with multiple developers on the same project simultaneously and to have a remote backup in case something happens to your local machine.</p>
+            <p> To create one, click on the + icon in the top right corner of the GitHub homepage and select "New repository" from the dropdown menu. Then click on the create button and use the SSH link to copy the link into the terminal right after the git command "git clone". </p>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="image12">
+            <img src="" alt="" height="100%" width="100%">
+        </div>
+        <div class="image22">
+            <img src="" alt="" height="100%" width="100%">
+        </div>
+        <div class="text2">
+            <h2>Essential Commands</h2>
+            <p> When you've created your repository you can add your new files with the command "git add .". After that, you commit the added files to the repository with a message describing what you've done.
+                Another two important commands are git push and pull which will respectivly push your changes to the remote repository and pull from the repository into your local machine.
+        </div>
+    </div>
+    <!-- 
 
     Detail how other people can contribute to the project
     1. Create a new branch for your changes
@@ -42,5 +43,6 @@
         The repository maintainers will review your pull request. They might request changes or provide feedback.
         Make the necessary updates in your branch and push them to your fork. The pull request will automatically update.
     5. Merge the Pull Request:
-        Once your changes are approved, the maintainers will merge your pull request into the main repository.
+        Once your changes are approved, the maintainers will merge your pull request into the main repository. -->
+</body>
 </html>
