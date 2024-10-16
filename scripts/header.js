@@ -2,7 +2,6 @@ const menuToggle = document.querySelector('.menu-toggle')
 const menu = document.querySelector('.menu')
 const logo = document.querySelector('.logo')
 const link = document.querySelector('.menu li')
-const underline = document.querySelector('underline');
 
 // GSAP Start Animation
 gsap.from('.menu-toggle', { duration: 0.7 , opacity: 0, scale: 0, y: '-100%' })
@@ -29,6 +28,3 @@ logo.addEventListener('mouseover', () =>{
     }, 1000);
 })
 
-link.addEventListener('mouseover', () =>{
-    
-})

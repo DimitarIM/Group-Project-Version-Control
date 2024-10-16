@@ -98,12 +98,30 @@
     text-transform: uppercase;
 }
 
-.underline {
+.underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.underline-animation::after {
+    content: '';
     position: absolute;
-    background-color: white;
+    width: 100%;
+    transform: scaleX(0);
     height: 2px;
-    width: 5rem;
-    top: 20px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+.underline-animation:hover::after {
+    transform: scaleX(1);
+  }
+
+.underline-animation:hover::after {
+    transform-origin: bottom center;
 }
 
 .menu li a {
@@ -120,7 +138,8 @@
 }
 
 @keyframes float {
-    0% {
+    0% 
+    {
         transform: translateY(0px)
     }
 
