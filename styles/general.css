@@ -12,5 +12,5 @@ body {
     background:rgb(26, 34, 48);
     background: linear-gradient(0deg, rgba(26,34,48,1) 0%, rgba(20,19,16,1) 100%);
     background-attachment: fixed;
-    font-family:"Inter", Oswald;
+    font-family:Oswald, Arial;
 }

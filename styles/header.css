@@ -23,13 +23,25 @@
     cursor: pointer;
     left: 100px;
     animation: float 6s linear infinite;
-    transition: background-size 0.15s;
+    transition: background-size 0.20s;
 }
 
 .logo:hover {
-    transform: translateY(0);
     animation-play-state: paused;
     background-size: 85px
+}
+
+.pulse {
+    position: absolute;
+    pointer-events: none;
+    width: 140px;
+    height: 140px;
+    border:3px solid white;
+    border-radius: 70px;
+    opacity: 1;
+    animation: expand 0.5s linear forwards;
+    left: -25px;
+    top: -25px;
 }
 
 .menu-toggle {
@@ -42,7 +54,7 @@
     background-position: center;
     transition: background-size 0.15s;
     cursor: pointer;
-    
+
 }
 
 .menu-toggle:hover {
@@ -52,13 +64,13 @@
 .menu-toggle.active {
     background: url(../images/header/icons/cross.png);
     background-repeat: no-repeat;
-    background-size:35px;
+    background-size: 35px;
     background-position: center;
     transition: background-size 0.15s;
     cursor: pointer;
 }
 
-.menu-toggle.active:hover{
+.menu-toggle.active:hover {
     background-size: 40px;
 }
 
@@ -70,53 +82,68 @@
     font-size: 18px;
     padding-bottom: 4px;
     opacity: 0;
-    transform: translateY(-100px);
+    pointer-events: none;
     transition: opacity 0.5s;
 }
 
 .menu.active {
     opacity: 1;
-    transform: translateY(0)
+    pointer-events: all;
 }
 
 .menu li {
     list-style: none;
-    margin-right: 10px;
+    margin-right: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.underline {
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 5rem;
+    top: 20px;
 }
 
 .menu li a {
     display: inline-block;
     text-decoration: none;
-    margin-right: 20px;
-    transform: scale(1);
+
+    transform: scale(0.9);
     color: white;
     transition: all 0.3s;
 }
 
 .menu li a:hover {
-    transform: scale(1.1);
+    transform: scale(1);
 }
-
-/* .spark {
-    background-color: white;
-    height: 30px;
-    width: 30px;
-    border-radius: 15px;
-    margin: 40px;
-
-    animation-name: glow;
-    animation-duration: 4s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-} */
 
 @keyframes float {
     0% {
         transform: translateY(0px)
     }
 
-    50%
-    {
+    50% {
         transform: translateY(8px)
+    }
+}
+
+@keyframes expand {
+    0% 
+    {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: 0;
+        transform: scale(2);
     }
 }
