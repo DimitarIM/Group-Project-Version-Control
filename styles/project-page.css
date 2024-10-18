@@ -29,26 +29,18 @@ img {
     grid-template: 0.5fr 2fr / 1fr;
 }
 
-.text {
-    grid-area: text;
-}
-
-.text2 {
-    grid-area: text2;
-}
-
 p {
     border-bottom: white double 5px;
     margin: 0px 16px 16px 16px;
     padding: 16px;
+    text-align: center;
 }
 
 .title-text, .title-text2 {
-    align-self: center;
+    align-self: flex-end;
     display: inline-block;
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 16px;
     text-align: center;
 }
 
@@ -120,33 +112,37 @@ p {
 
 @media screen and (max-width: 768px) {
     .container {
-        display: grid;
-        grid-template: 1fr 0.5fr 1fr 0.5fr / 1fr;
-        grid-template-areas: 
-            "text"
-            "image"
-            "text2"
-            "image2";
+        display: flex;
+        flex-direction: column;
     }
 
     .empty-div {
         border-bottom: white double 5px;
         margin: auto;
+        order: 3;
         width: 70%;
     }
 
     .image, .image2 {
         grid-template: 1fr / 1fr;
         grid-template-areas: "imageimg";
+        margin: 0px 16px 16px 16px;
     }
 
     .image img, .image2 img {
         align-self: flex-start;
-        grid-area: image;
         grid-area: imageimg;
-        height: 50%;
+        height: 85%;
         justify-self: center;
-        width: 60%;
+        width: 85%;
+    }
+
+    .image {
+        order: 2;
+    }
+
+    .image2 {
+        order: 5;
     }
 
     .text, .text2 {
@@ -156,11 +152,11 @@ p {
     }
 
     .text {
-        grid-area: text;
+        order: 1;
     }
 
     .text2 {
-        grid-area: text2;
+        order: 4;
     }
 
     p {
