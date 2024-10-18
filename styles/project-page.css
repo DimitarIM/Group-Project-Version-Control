@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: inter;
 }
 
 html {
@@ -9,51 +10,118 @@ html {
 }
 
 body {
+    background:rgb(26, 34, 48);
+    background: linear-gradient(0deg, rgba(26,34,48,1) 0%, rgba(20,19,16,1) 100%);
     color: white;
     display: flex;
     flex-direction: column;
-    font-family: inter;
     margin: 0;
     min-height: 100%;
-    background:rgb(26, 34, 48);
-    background: linear-gradient(0deg, rgba(26,34,48,1) 0%, rgba(20,19,16,1) 100%); 
+}
+
+img {
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.15);
+}
+
+.text, .text2 {
+    padding: 16px;
+    margin: 16px;
+    grid-template: 0.5fr 2fr / 1fr;
 }
 
 .text {
     grid-area: text;
-    padding: 16px;
-    margin: 16px;
-    text-align: center;
-}
-
-.text p {
-    margin: 8px;
-    padding: 8px;
 }
 
 .text2 {
-    flex-direction: column;
-    text-align: center;
-    margin: 16px;
+    grid-area: text2;
+}
+
+p {
+    border-bottom: white double 5px;
+    margin: 0px 16px 16px 16px;
     padding: 16px;
 }
 
-.title-text {
+.title-text, .title-text2 {
+    align-self: center;
     display: inline-block;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 16px;
+    text-align: center;
 }
 
-.text2 p {
-    margin: 0px 16px 16px 16px;
-    padding: 16px;
+.image, .image2, .text, .text2 {
+    display: grid;
+}
+
+.title-text {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.paragraph1 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.title-text2 {
+    grid-area: 1 / 1 /2 / 2;
+}
+
+.paragraph2 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        display: grid;
+        grid-template: 1fr 1fr / repeat(2, 1fr);
+        grid-template-areas: 
+            "text image"
+            "image2 text2";
+    }
+
+    .empty-div {
+        display: none;
+    }
+
+    .image img, .image2 img {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .image, .image2 {
+        grid-template: 1fr / 1fr;
+        grid-template-areas: "imageimg";
+    }
+
+    .image img {
+        grid-area: image;
+        grid-area: imageimg;
+        height: 50%;
+        width: 55%;
+    }
+
+    .image2 img {
+        grid-area: image2;
+        grid-area: imageimg;
+        height: 50%;
+        width: 50%;
+    }
+
+    .text {
+        grid-area: text;
+    }
+
+    .text2 {
+        grid-area: text2;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .container {
         display: grid;
-        grid-template: 2fr 1fr / 1fr;
+        grid-template: 1fr 0.5fr 1fr 0.5fr / 1fr;
         grid-template-areas: 
             "text"
             "image"
@@ -61,77 +129,42 @@ body {
             "image2";
     }
 
-    .image img {
-        grid-area: image;
-        width: 100%;
-        height: 100%;
+    .empty-div {
+        border-bottom: white double 5px;
+        margin: auto;
+        width: 70%;
     }
 
-    .image2 img {
-        grid-area: image2;
-        width: 100%;
-        height: 100%;
+    .image, .image2 {
+        grid-template: 1fr / 1fr;
+        grid-template-areas: "imageimg";
     }
 
-    .text {
-        grid-area: text;
-        padding: 16px;
-        margin: 16px;
-        text-align: center;
-    }
-
-    .text2 {
-        grid-area: text2;
-        flex-direction: column;
-        text-align: center;
-        margin: 16px;
-        padding: 16px;
-    }
-   
-}
-
-@media screen and (min-width: 769px) {
-    .container {
-        display: grid;
-        grid-template: 1fr / 2fr / repeat(2, 1fr);
-        grid-template-areas: 
-            "text image"
-            "image2 text2";
-    }
-
-    .image, .image2, .text, .text2 {
-        display: grid;
-    }
-
-    .image {
+    .image img, .image2 img {
         align-self: flex-start;
-    }
-
-    .image img {
         grid-area: image;
-        width: 80%;
-        height: 80%;
+        grid-area: imageimg;
+        height: 50%;
+        justify-self: center;
+        width: 60%;
     }
 
-    .image2 img {
-        grid-area: image2;
-        width: 80%;
-        height: 80%;
+    .text, .text2 {
+        height: min-content;
+        margin: 8px;
+        padding: 8px;
     }
 
     .text {
         grid-area: text;
-        padding: 16px;
-        margin: 16px;
-        text-align: center;
     }
 
     .text2 {
         grid-area: text2;
-        flex-direction: column;
-        text-align: center;
-        margin: 16px;
-        padding: 16px;
     }
 
+    p {
+        border-bottom: none;
+        text-align: justify;
+    }
 }
