@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./styles/general.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="styles/body-index.css">
+    <link rel="stylesheet" href="./styles/body-index.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
     <script src="./scripts/header.js" defer></script>
+
     <title>GitHub Guide</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="logo"></div>
+        <a href="./index.html"><div class="logo"></div></a>
         <div class="button-menu">
             <ul class="menu">
                 <li><a href="./project-page.html">
@@ -41,7 +44,7 @@
             <h3>To</h3>
             <h1>GitHub</h1>
             <div class="button-container">
-                <button>Learn More</button>
+                <a href="https://docs.github.com/en"><button>Learn More</button></a>
             </div>
         </div>
         <div class="image-container">
@@ -71,5 +74,51 @@
             </div>
         </div>
     </main>
+
+    <footer class="footer">
+        <div class="footer-column1">
+            <h2>Company</h2>
+            <p>Dorivit BV, Monitorweg 1, Almere 1322BJ, Netherlands</p>
+
+            
+                <div class="footer__social-media-links">
+                                    
+                     <div class="facebook footer__social__media-item">
+                         <a href="https://www.facebook.com/" target="_blank">
+                             <img src="./img/facebook.png" alt="facebook" width="24px" height="auto">
+                         </a>
+                     </div>
+
+                     <div class="github footer__social__media-item">
+                         <a href="https://github.com/DimitarIM/Group-Project_VC/tree/footer" target="_blank">
+                             <img src="./img/github.png" alt="inst" width="24px" height="auto">
+                         </a>
+                     </div>
+
+                     <div class="tiktok footer__social__media-item">
+                         <a href="#" target="_blank">
+                             <img src="./img/tiktok.png" alt="tiktok" width="24px" height="auto">
+                         </a>
+                     </div>
+                </div>
+
+            </div>
+
+            <div class="footer-column2">
+
+                <form action="mailto: ke1vin.kapustian@gmail.com?subject=My questions" method="POST" enctype="text/plain" class="footer__form">
+                    <label for="question">
+                        Would you like to ask some questions?
+                    </label>
+                    
+                    <div class="footer__form-button">
+                        <input name="question" type="text" id="question" autocomplete="off" placeholder="Ask here">
+                        <button type="submit">
+                            <img src="./img/arrow.png" alt="arrow" width="24px" height="auto">
+                        </button>
+                    </div>
+                </form>
+            </div>
+    </footer>
 </body>
 </html>
