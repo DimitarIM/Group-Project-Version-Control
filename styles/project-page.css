@@ -91,7 +91,7 @@ p {
         grid-area: image;
         grid-area: imageimg;
         height: 50%;
-        width: 55%;
+        width: 50%;
     }
 
     .image2 img {
@@ -129,10 +129,18 @@ p {
         margin: 0px 16px 16px 16px;
     }
 
+    .image img {
+        height: 90%;
+    }
+
+    .image2 img {
+        height: 85%;
+    }
+
+
     .image img, .image2 img {
         align-self: flex-start;
         grid-area: imageimg;
-        height: 85%;
         justify-self: center;
         width: 85%;
     }
