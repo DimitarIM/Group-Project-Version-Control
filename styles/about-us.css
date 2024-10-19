@@ -7,6 +7,8 @@ html {
 body {
     width: 100%;
     min-height: 100%;
+    background:rgb(26, 34, 48);
+    background: linear-gradient(0deg, rgba(26,34,48,1) 0%, rgba(20,19,16,1) 100%);
 }
 
 * {
@@ -94,6 +96,7 @@ button:focus, button:active, textarea:focus {
     padding-top: 40px;
     margin-left: 120px;
     margin-right: 120px;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -109,15 +112,17 @@ button:focus, button:active, textarea:focus {
 .team-text h2 {
     font-size: 56px;
     font-weight: 700;
-    color: rgba(0, 0, 0, 1);
+    color: white;
+    transition: all 0.3s ease-in-out;
 }
 
 .team-text p {
     font-size: 18px;
     font-weight: 400;
-    color: rgb(15, 15, 15);
+    color: white;
     width: 40%;
     text-align: center;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -129,27 +134,35 @@ button:focus, button:active, textarea:focus {
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    
+    justify-items: center;
 }
 
 .team-img {
     width: 400px;
     height: auto;
-    background-color: rgb(235, 235, 235);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.493) 0%, rgb(31, 29, 37) 100%);
     padding: 10px 10px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.team-img:hover {
+    transform: scale(1.03);
 }
 
 .team-img h3 {
     font-size: 26px;
     font-weight: 600;
+    color: white;
 }
 
 .team-img p {
     font-size: 16px;
     font-weight: 400;
+    color: white;
 }
 
 .team-img > img {
@@ -157,6 +170,70 @@ button:focus, button:active, textarea:focus {
 }
     
 
+@media screen and (max-width: 1268px) {
+    
+    .team__img-columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
 
+}
+    
+
+@media screen and (max-width: 1068px) {
+    .main-container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 882px) {
+    .team-img {
+        width: 300px;
+    }
+
+    .team-text h2 {
+        font-size: 50px;
+    }
+    
+    .team-text p {
+        font-size: 16px;
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 678px) {
+    .team__img-columns {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .team-img {
+        width: 450px;
+    }
+
+    .team-text h2 {
+        font-size: 46px;
+    }
+    
+    .team-text p {
+        font-size: 14px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 514px) {
+    .team-img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .team-img {
+        width: 300px;
+    }
+}
 
         
