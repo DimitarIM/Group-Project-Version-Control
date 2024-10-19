@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branches</title>
+    <link rel="stylesheet" href="./styles/branches-changes.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="./images/branches_1.png" alt="Commands for Creating Branches">
+        </div>
+        <div class="text">
+            <p>
+                <span class="title-text">Creating a Branch</span><br>
+                Branches are a feature that allows you to work on different parts of a project in isolation so as to not directly affect and possibly "break" the main code. This is an invaluable tool for working on projects in groups .You could see branches as separate lines of development from the "main" branch of the project. To create a branch, type "git branch <branch-name>" in your command console. "git checkout <branch-name>" will move you to your chosen branch. You can also use the command "git checkout -b <branch-name>" to simultaneously create a branch and switch to it. The "git branch" command let's you see which branch you're currently on. The main branch is typically named "main" or "master".
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text">
+            <p>
+                <span class="title-text">Merging and Closing Branches</span><br>
+                After completing your work on a feature or bug in your branch it is time to merge it to the main branch. First, you switch to the branch where you want to integrate the changes (often the main or master branch) using the "git checkout main" command. Next, you merge the feature branch into the current branch with "git merge <branch-name>", which incorporates all the changes from the feature branch into the main branch. If there are no conflicts, Git combines the histories automatically. Once the merge is successful, you can close (delete) the feature branch with "git branch -d <branch-name>" to clean up your workspace, as the branch is no longer needed. If the branch exists on a remote repository, you can delete it remotely using "git push origin --delete <branch-name>".
+                </p>
+            </div>
+            <div class="image">
+                <img src="./images/branches_2.png" alt="Merging and Closing Branches">
+            </div>
+    </div>
+</body>
+</html>
