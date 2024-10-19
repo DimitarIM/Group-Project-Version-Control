@@ -6,6 +6,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: white;
+}
+html, body {
+    height: 100%;
 }
 
 body {
@@ -13,4 +17,6 @@ body {
     background: linear-gradient(0deg, rgba(26,34,48,1) 0%, rgba(20,19,16,1) 100%);
     background-attachment: fixed;
     font-family:Oswald, Arial;
+    display: flex;
+    flex-direction: column;
 }
