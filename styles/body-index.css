@@ -7,6 +7,15 @@
     text-align: right;
 }
 
+.welcome-message {
+    display: none;
+}
+
+.github-docs {
+    display: none;
+}
+
+
 .pt2 a {
     display: inline-block;
     background-color: white;
@@ -32,7 +41,7 @@
     display: none;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 781px){
 
     .getStarted {
         grid-template: 1fr / repeat(2, 1fr);
@@ -48,7 +57,7 @@
     }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 781px){
 
     .getStarted {
         grid-template: 1fr / 1fr;
@@ -62,6 +71,14 @@
 
     .pt1 {
         text-align: center;
+    }
+
+    .welcome-message {
+        display: block;
+    }
+
+    .github-docs {
+        display: inline-block;
     }
 
     .border {

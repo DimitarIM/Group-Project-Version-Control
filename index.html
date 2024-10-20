@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/header-media.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="/styles/index-media.css">
     <link rel="stylesheet" href="./styles/body-index.css">
     <link rel="stylesheet" href="./styles/footer.css">
 
@@ -19,7 +21,9 @@
 
 <body>
     <header class="header">
-        <a href="./index.html"><div class="logo"></div></a>
+        <a href="./index.html">
+            <div class="logo"></div>
+        </a>
         <div class="button-menu">
             <ul class="menu">
                 <li><a href="./project-page.html">
@@ -50,14 +54,18 @@
         </div>
         <div class="image-container">
             <img class="github-logo" src="./images/homepage/github-logo.png" alt="">
+            <div class="team-container mobile">
+                <h3>Made by</h3>
+                <h1>Team <span>Zenith</span></h3>
+            </div>
         </div>
-        
+
         <div class="team-container">
             <h3>Made by</h3>
             <h1>Team <span>Zenith</span></h3>
         </div>
     </div>
-    
+
     <script type="text/javascript" src="scripts/particles.min.js"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
 
@@ -65,12 +73,13 @@
         <div class="getStarted">
             <div class="getStarted-grid">
                 <div class="pt1">
-                    <h2>Welcome to the ultimate Github guide!</h2>
+                    <h2 class="welcome-message">Welcome to the ultimate Github guide!</h2>
                     <p>Here's some useful links to get it started:</p>
                 </div>
                 <div class="pt2">
                     <a href="https://github.com/" target="_blank">Github</a>
-                    <a href="https://git-scm.com/downloads" target="_blank">Download Git</a></p>
+                    <div class="github-docs"><a href="https://docs.github.com/en" target="_blank">GitHub Docs</a></div>
+                    <a href="https://git-scm.com/downloads" target="_blank">Download Git</a>
                 </div>
             </div>
         </div>
@@ -82,45 +91,47 @@
             <h2>Company</h2>
             <p>Dorivit BV, Monitorweg 1, Almere 1322BJ, Netherlands</p>
 
-            
-                <div class="footer__social-media-links">
-                                    
-                     <div class="facebook footer__social__media-item">
-                         <a href="https://www.facebook.com/" target="_blank">
-                             <img src="./img/facebook.png" alt="facebook" width="24px" height="auto">
-                         </a>
-                     </div>
 
-                     <div class="github footer__social__media-item">
-                         <a href="https://github.com/DimitarIM/Group-Project_VC/tree/footer" target="_blank">
-                             <img src="./img/github.png" alt="inst" width="24px" height="auto">
-                         </a>
-                     </div>
+            <div class="footer__social-media-links">
 
-                     <div class="tiktok footer__social__media-item">
-                         <a href="#" target="_blank">
-                             <img src="./img/tiktok.png" alt="tiktok" width="24px" height="auto">
-                         </a>
-                     </div>
+                <div class="facebook footer__social__media-item">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="./img/facebook.png" alt="facebook" width="24px" height="auto">
+                    </a>
                 </div>
 
+                <div class="github footer__social__media-item">
+                    <a href="https://github.com/DimitarIM/Group-Project_VC/tree/footer" target="_blank">
+                        <img src="./img/github.png" alt="inst" width="24px" height="auto">
+                    </a>
+                </div>
+
+                <div class="tiktok footer__social__media-item">
+                    <a href="#" target="_blank">
+                        <img src="./img/tiktok.png" alt="tiktok" width="24px" height="auto">
+                    </a>
+                </div>
             </div>
 
-            <div class="footer-column2">
+        </div>
 
-                <form action="mailto: ke1vin.kapustian@gmail.com?subject=My questions" method="POST" enctype="text/plain" class="footer__form">
-                    <label for="question">
-                        Would you like to ask some questions?
-                    </label>
-                    
-                    <div class="footer__form-button">
-                        <input name="question" type="text" id="question" autocomplete="off" placeholder="Ask here">
-                        <button type="submit">
-                            <img src="./img/arrow.png" alt="arrow" width="24px" height="auto">
-                        </button>
-                    </div>
-                </form>
-            </div>
+        <div class="footer-column2">
+
+            <form action="mailto: ke1vin.kapustian@gmail.com?subject=My questions" method="POST" enctype="text/plain"
+                class="footer__form">
+                <label for="question">
+                    Would you like to ask some questions?
+                </label>
+
+                <div class="footer__form-button">
+                    <input name="question" type="text" id="question" autocomplete="off" placeholder="Ask here">
+                    <button type="submit">
+                        <img src="./img/arrow.png" alt="arrow" width="24px" height="auto">
+                    </button>
+                </div>
+            </form>
+        </div>
     </footer>
 </body>
+
 </html>
