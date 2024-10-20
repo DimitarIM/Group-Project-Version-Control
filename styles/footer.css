@@ -68,7 +68,7 @@ button:focus, button:active, textarea:focus {
 
 .footer {
     background:rgb(26, 34, 48);
-    background: linear-gradient(0deg, rgba(20,19,16,1) 0%, rgba(26,34,48,1) 100%); 
+    background: linear-gradient(0deg, rgba(20,19,16,1) 0%, rgb(20, 19, 16) 40%, transparent 100%); 
     padding: 90px 200px 90px 200px;
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,207 @@
+@media (max-width: 885px) {
+    .header {
+        padding: 3rem 2rem;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+        background-size: 60px;
+    }
+
+    .logo:hover {
+        background-size: 65px;
+    }
+
+    .pulse {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        left: -15px;
+        top: -15px;
+    }
+
+    .menu-toggle {
+        width: 50px;
+        height: 50px;
+        background-size: 40px;
+    }
+
+    .menu-toggle:hover {
+        background-size: 45px;
+    }
+
+    .menu-toggle.active {
+        background-size: 25px;
+    }
+
+    .menu-toggle.active:hover {
+        background-size: 30px;
+    }
+
+    .menu {
+        font-size: 15px;
+        padding-right: 10px;
+    }
+
+    .menu li {
+        padding-right:4px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 665px) {
+    .header {
+        padding: 2rem 1rem;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        background-size: 50px;
+    }
+
+    .logo:hover {
+        background-size: 55px;
+    }
+
+    .pulse {
+        width: 90px;
+        height: 90px;
+        border-radius: 45px;
+        left: -15px;
+        top: -15px;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 40px;
+        background-size: 30px;
+    }
+
+    .menu-toggle:hover {
+        background-size: 35px;
+    }
+
+    .menu-toggle.active {
+        background-size: 20px;
+    }
+
+    .menu-toggle.active:hover {
+        background-size: 25px;
+    }
+
+    .menu {
+        font-size: 12px;
+        padding-right: 8px;
+    }
+
+    .menu li {
+        padding-right:2px;
+        letter-spacing: 0.5px;
+    }
+}
+
+@media (max-width: 490px) {
+    .header {
+        padding: 2rem 1rem;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        background-size: 30px;
+    }
+
+    .logo:hover {
+        background-size: 35px;
+    }
+
+    .pulse {
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+        left: -15px;
+        top: -15px;
+    }
+
+    .menu-toggle {
+        width: 30px;
+        height: 30px;
+        background-size: 20px;
+    }
+
+    .menu-toggle:hover {
+        background-size: 25px;
+    }
+
+    .menu-toggle.active {
+        background-size: 10px;
+    }
+
+    .menu-toggle.active:hover {
+        background-size: 15px;
+    }
+
+    .menu {
+        font-size: 10px;
+        padding-right: 4px;
+    }
+
+    .menu li {
+        padding-right:1px;
+        letter-spacing: 0.5px;
+    }
+}
+
+@media (max-width: 490px) {
+    .header {
+        padding: 2rem 1rem;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        background-size: 30px;
+    }
+
+    .logo:hover {
+        background-size: 35px;
+    }
+
+    .pulse {
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+        left: -15px;
+        top: -15px;
+    }
+
+    .menu-toggle {
+        width: 30px;
+        height: 30px;
+        background-size: 20px;
+    }
+
+    .menu-toggle:hover {
+        background-size: 25px;
+    }
+
+    .menu-toggle.active {
+        background-size: 10px;
+    }
+
+    .menu-toggle.active:hover {
+        background-size: 15px;
+    }
+
+    .menu {
+        font-size: 7px;
+        padding-right: 4px;
+    }
+
+    .menu li {
+        padding-right:1px;
+        letter-spacing: 0.5px;
+    }
+}
