@@ -1,6 +1,6 @@
 .getStarted {
     display: grid;
-    margin-top: 32px;
+    margin-top: 56px;
 }
 
 .pt1 {
@@ -24,6 +24,7 @@
 
 .pt2 {
     margin-top: 16px;
+    margin-bottom: 8px;
     text-align: center;
 }
 
