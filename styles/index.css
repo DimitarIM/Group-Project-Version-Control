@@ -61,6 +61,7 @@
     display: inline-block;
     z-index: -1;
     filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.8));
+    animation: logo-glow 5s;
 }
 
 .team-container {
@@ -76,6 +77,11 @@
     justify-content: end;
     bottom: 0;
     right: 0;
+}
+
+.team-container h3 {
+    font-size: 0.8rem;
+    padding-bottom: 0.3rem;
 }
 
 .team-container h1 span {
@@ -97,6 +103,16 @@
         filter: drop-shadow(0 0 20px rgba(255,255,255, 0.8));
     }
 
+}
+
+@keyframes logo-glow {
+    0% {
+        filter: drop-shadow(0 0 6px rgba(255,255,255, 0.8));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 17px rgba(255,255,255, 0.8));
+    }
 }
 
 
